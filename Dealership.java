@@ -8,7 +8,9 @@ public class Dealership {
         inventory.add(new Vehicle("F150"));
         inventory.add(new ElectricCar("Telsa"));
         
-        inventory.get(1).drive(400);
+        inventory.get(1).startEngine();
+
+        inventory.get(1).drive(375);
         
         System.out.println(((ElectricCar)inventory.get(1)).getBattery());
 
